@@ -1,0 +1,79 @@
+.container {
+    max-width: 1000px;
+    width: 95%;
+    margin: auto;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-item {
+    width: 600px;
+    background-color: black;
+}
+.todo-input input {
+    border-radius: 0% !important;
+}
+.todo-input button {
+    border-radius: 0%;
+    font-weight: 600;
+    border: none !important;
+}
+.todo-input button:hover {
+    background-color: rgba(207, 32, 1, 0.932) !important;
+}
+
+.todo-list {
+    padding: 0.7rem;
+    transition: all 0.2s ease-in-out;
+}
+.todo-list .check-mark {
+    width: 20px !important;
+    height: 20px !important;
+}
+.todo-list .todo-text {
+    height: 30px;
+    border-radius: 0%;
+    background: none !important;
+    border: none;
+    color: #333;
+    font-weight: 600;
+}
+.todo-list .todo-text:focus {
+    box-shadow: none !important;
+}
+.todo-list del {
+    color: #333;
+    font-weight: 600 !important;
+    font-size: 1rem;
+}
+.todo-list .save-button {
+    width: 60px;
+    height: 40px;
+    font-weight: 600;
+    border: none !important;
+}
+.todo-list .save-button:hover {
+    background-color: rgba(207, 32, 1, 0.932) !important;
+}
+.todo-list .delete-button {
+    width: 60px;
+    height: 40px;
+    font-weight: 600;
+    border: none !important; 
+}
+.todo-list .delete-button:hover {
+    background-color: rgba(9, 130, 53, 0.932) !important;
+}
+
+/* utilities */
+.complete {
+    background-color: lightgreen;
+}
+.pending {
+    background-color: rgb(246, 232, 246);
+}
+.disabled {
+    opacity: .5 !important;
+}
